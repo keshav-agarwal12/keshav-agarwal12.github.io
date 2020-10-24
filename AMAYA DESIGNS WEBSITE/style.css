@@ -1,0 +1,195 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #e0e0e0;
+}
+header{
+  width: 100%;
+  background-color: #f1f1f1;
+  position: fixed;
+  z-index: 1;
+  height: 12%;
+}
+.navbar{
+  
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: inline-block;
+ 
+}
+.logo{ 
+  width: 30%;
+  padding-left: 6%;
+}
+.logo img{
+  width: 30%;
+  height: 15%;
+  
+  
+  
+}
+ul{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  top: 76px;
+  padding-right: 4%;
+  
+}
+ul li{
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 6px 16px;
+  text-decoration: none;
+}
+ ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Microsoft Yi Baiti', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  padding: 6px 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+ ul li a:hover{
+  
+  color: #6a7853;
+  text-decoration: none;
+}
+ .menu-btn i{
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+  .navbar{
+    padding: 0 30px 0 30px;
+  }
+  
+}
+@media (max-width: 942px){
+  .menu-btn i{
+    display: block;
+    right: 5%;
+    top: 3%;
+  }
+  
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  ul{
+    position: fixed;
+    top: 12%;
+    left: -100%;
+    backdrop-filter: blur(25px);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: +1;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+
+   ul li{
+    width: 100%;
+    margin: 20px 0;
+  }
+   ul li a{
+    width: 100%;
+    margin-left: -80%;
+    display: block;
+    font-size: 20px;
+    color: #000000;
+    border: black;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+   ul li a:hover{
+    background: none;
+    color: #6a7853;
+  }
+  .logo{
+    top: 2%;
+    width: 35%;
+    padding-left: 0%;
+  }
+  .logo img{
+    top: 2%;
+    width: 100%;
+    height: 75%;
+    
+  }
+
+  
+}
+
+.footer p{
+  font-size: 80%;
+}
+
+.contact{
+  font-family:'Microsoft Yi Baiti' ;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.centerdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.centerdiv a{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px;
+}
+.centerdiv a i{
+  font-size: 30px;
+  color: #6a7853;
+}
+
+
+
+
+
